@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form Validation</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <form name="login" class="login-form">
+                <h2> Satinder | Login Page: </h2>
+                <div class="form-group">
+                    <label for="uname"> User Name: </label>
+                    <input type="text" id="uname" name="uname" autofocus required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd"> Password: </label>
+                    <input type="password" id="pwd" name="pwd" required>
+                </div>
+
+                <div class="button-group">
+                    <input type="button" value="Login." onClick="validate()">
+                    <input type="reset" value="Clear All.">
+                </div>
+
+                <div id="error-msg" class="error-msg"></div>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
